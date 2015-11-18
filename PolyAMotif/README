@@ -1,0 +1,21 @@
+Code for Poly(A) Classification wtih HMM Features and Linear SVM
+
+ Bo Xie (bo.xie@gatech.edu)
+
+The provided code is written in Python and requires the following modules:
+  1) numpy
+  2) scipy
+  3) liblinear
+
+Liblinear can be obtained from http://www.csie.ntu.edu.tw/~cjlin/liblinear/
+
+The file poly_a_class.py exposes two main functions:
+  1) TrainHMMFeatureClassifier
+  2) PredictHMMClassifier
+
+TrainHMMFeatureClassifier is used to train a classifier and PredictHMMClassifier
+is used to make predictions about test sequences.
+
+Two import parameters are d and k. d is the number of observations to combine
+into mega-state and k is the equivalent number of hidden states. The user may
+also need to choose the parameter C for SVM.
